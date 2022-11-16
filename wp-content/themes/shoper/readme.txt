@@ -92,9 +92,6 @@ License:  Self created by athemeart.com
 
 == Upgrade Notice  ==
 
-= 1.3.8 =
-* WooCommerce compatibility
-
 = 1.3.7 =
 * Update translate.wordpress lang file
 

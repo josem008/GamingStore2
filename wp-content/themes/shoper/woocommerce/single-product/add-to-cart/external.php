@@ -12,18 +12,18 @@
  *
  * @see https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce\Templates
- * @version 7.4.0
+ * @version 3.4.0
  */
 
 defined( 'ABSPATH' ) || exit;
-//echo   $product->button_text ? $product->button_text : 'Buy at Amazon';
 
 do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 <form class="cart" action="<?php echo esc_url( $product_url ); ?>" method="get">
 	<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
-	<a href="<?php echo esc_url( $product_url ); ?>" class="button button-btn" target="_blank"><?php echo esc_html( $button_text ); ?></a>
+	<button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html( $button_text ); ?></button>
+
 	<?php wc_query_string_form_fields( $product_url ); ?>
 
 	<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
